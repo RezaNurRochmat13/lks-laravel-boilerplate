@@ -1,0 +1,23 @@
+services:
+  db:
+    image: postgres:15
+    container_name: laravel_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: laravel-boilerplate
+      POSTGRES_PASSWORD: laravel-boilerplate
+      POSTGRES_DB: laravel-boilerplate-db
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    ports:
+       - "5432:5432"
+    networks:
+      - laravel-network
+
+networks:
+  laravel-network:
+    driver: bridge
+
+volumes:
+  dbdata:
+    driver: local
