@@ -35,7 +35,7 @@ Here’s a tighter, more search-friendly version that highlights value and avoid
 ## 📋 Requirements
 To set up TailAdmin Laravel, make sure your environment includes:
 
-* **PHP 8.2+**
+* **PHP 8.3+**
 * **Composer** (PHP dependency manager)
 * **Node.js 18+** and **npm** (for compiling frontend assets)
 * **Database** - Works with SQLite (default), MySQL, or PostgreSQL
@@ -64,8 +64,8 @@ npm -v
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/TailAdmin/tailadmin-laravel.git
-cd tailadmin-laravel
+git clone https://github.com/RezaNurRochmat13/lks-laravel-boilerplate
+cd lks-laravel-boilerplate
 ```
 
 ### Step 2: Install PHP Dependencies
@@ -127,12 +127,12 @@ This creates a unique encryption key for your application.
 Update your `.env` file with your database credentials:
 
 ```env
-DB_CONNECTION=mysql
+DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=tailadmin_db
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
+DB_PORT=5432
+DB_DATABASE=xxx-db
+DB_USERNAME=xxx
+DB_PASSWORD=xxx
 ```
 
 Create the database:
